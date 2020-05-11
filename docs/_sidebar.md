@@ -4,6 +4,7 @@
   - [2. Add Two Numbers](/Top100/2.AddTwoNumbers.md)
   - [3. Longest Substring Without Repeating Characters](/Top100/3.LongestSubstringWithoutRepeatingCharacters.md)
   - [4. Median Of Two Sorted Arrays](/Top100/4.MedianOfTwoSortedArrays.md)
+  - [5.Longest Palindromic Substring](/Top100/5.LongestPalindromicSubstring.md)
 * [C++ Knowledge Base](/CPP/)
   - [Containers](/CPP/Containers)
 * [Markdown](/Markdown)
