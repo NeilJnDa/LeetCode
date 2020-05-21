@@ -13,6 +13,7 @@
   - [20. Valid Parentheses](/Top100/20.ValidParentheses.md)
   - [21.Merge Two Sorted Lists](/Top100/21.MergeTwoSortedLists.md)
   - [22. Generate Parentheses](/Top100/22.GenerateParentheses.md)
+  - [23. Merge k Sorted Lists.md](/Top100/23.MergeKSortedLists.md)
 * [C++ Knowledge Base](/CPP/)
   - [Containers](/CPP/Containers)
 * [Markdown](/Markdown)

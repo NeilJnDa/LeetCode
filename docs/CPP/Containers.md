@@ -39,7 +39,102 @@ There are four kinds of containers:
 
 ---
 
+### priority_queue
 
+Priority Queues are designed such that its first element is always the greatest one which is similar to a maximum *heap*. Elements can be inserted at any moment, and only the max heap element can be retrieved. Also, minimum heap can be achieved by customize the comparing method.
+
+> Priority queues are implemented as *container adapters*, which are classes that use an encapsulated object of a specific container class as its *underlying container*, providing a specific set of member functions to access its elements. Elements are *popped* from the ***"back"*** of the specific container, which is known as the *top* of the priority queue.
+
+#### Construct
+
+**Maximum heap** ,`vector<T>` and `less<T>` by default.
+
+```c++
+#include<queue>		 //std::priority_queue
+#include<functional> //std::greater
+using namespace std;
+int nums[] = {1,2,3,4};
+priority_queue<int> first;
+priority_queue<int> second(nums, nums+4);
+priority_queue<int, vector<int>, less<int> > third;
+```
+
+> For ease of memorizing, `less<T>` could be seen as the value of child nodes are getting less.
+
+If you want to create a **minimum heap**:
+
+```c++
+priority_queue<int, vector<int>, greater<int> > min_heap;
+```
+
+If you want to custom comparison method:
+
+```c++
+class cmp_greater{
+  bool operator(const int a, const int b){
+      return a > b;
+      //greaater is '>' of course.
+  }  
+};
+class cmp_less{
+  bool operator(const int a, const int b){
+      return a < b;
+  }  
+};
+
+priority_queue<int, vector<int>, cmp_greater> max_heap_c;
+priority_queue<int, vector<int>, cmp_less> min_heap_c;
+```
+
+For example, it is rather handy when comparing two nodes in linked lists:
+
+```c++
+struct ListNode {
+   int val;
+   ListNode *next;
+};
+class cmp_greater_node{
+   bool operator()(const ListNode* a, const ListNode* b){
+        return a->val > b->val;
+   }
+};
+//Node with smallest value will at the top of the heap
+priority_queue<ListNode*, vector<ListNode*>, cmp_greater_node) min_heap_node;
+```
+
+#### Push or Emplace
+
+```c++
+priority_queue<int> pq;
+int a = 10;
+pq.push(a);
+pq.emplace(a); //No temp object; C++11
+```
+
+#### Pop
+
+```c++
+pq.pop();
+```
+
+#### Top
+
+Return void
+
+```c++
+pq.top();
+```
+
+#### Property
+
+```
+pq.size(); //return the number of elements
+pq.empty(); //return bool value if it's empty
+```
+
+#### Traverse
+
+No traversal method available. It can be only achieved by `pop()` continuously.
 
 ## Associative containers
 
