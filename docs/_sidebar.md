@@ -16,6 +16,7 @@
   - [23. Merge k Sorted Lists](/Top100/23.MergeKSortedLists.md)
   - [31. Next Permutation](/Top100/31.NextPermutation.md)
   - [32. Longest Valid Parentheses](/Top100/32.LongestValidParentheses.md)
+  - [33. Searchin Rotated Sorted Array](/Top100/33.SearchinRotatedSortedArray.md)
 * [C++ Knowledge Base](/CPP/)
   - [Containers](/CPP/Containers)
 * [Markdown](/Markdown)
