@@ -17,6 +17,7 @@
   - [31. Next Permutation](/Top100/31.NextPermutation.md)
   - [32. Longest Valid Parentheses](/Top100/32.LongestValidParentheses.md)
   - [33. Searchin Rotated Sorted Array](/Top100/33.SearchinRotatedSortedArray.md)
+  - [34. Find First and Last Position of Element in Sorted Array](/Top100/34.FindFirstAndLastPositionOfElementInSortedArray.md)
 * [C++ Knowledge Base](/CPP/)
   - [Containers](/CPP/Containers)
 * [Markdown](/Markdown)
